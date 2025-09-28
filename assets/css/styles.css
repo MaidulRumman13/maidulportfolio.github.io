@@ -485,7 +485,8 @@ footer {
         align-items: stretch;
         padding: 20px 0;
         max-height: 0;
-        overflow: hidden;
+        overflow: auto;/* Added scroll for overflow content */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
         transition: max-height 0.3s ease;
         z-index: 999;
     }
@@ -557,4 +558,5 @@ footer {
     .slider-slide-3 {
         min-width: calc(50% - 10px);
     }
+
 }
