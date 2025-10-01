@@ -33,11 +33,11 @@ portfolio/
 └── assets/
     ├── projects.json       # All project data
     ├── css/
-    │   └── style.css           # Main stylesheet
+    │   └── style.css       # Main stylesheet
     ├── js/ 
     │   ├── mobile-nav.js   # Mobile navigation toggle
     │   ├──projects-page.js # All projects page
-    │   └── script.js         # Home page functionality
+    │   └── script.js       # Home page functionality
     └── pages/
         ├── python.js       # Python projects dynamic loading
         ├── sql.js          # SQL projects dynamic loading
