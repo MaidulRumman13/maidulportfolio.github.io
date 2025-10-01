@@ -15,7 +15,7 @@ A professional, responsive, and dynamic portfolio website showcasing my data ana
 
 ## 🚀 Live Demo
 
-[View Live Portfolio]([https://your-username.github.io/your-repo-name/](https://maidulrumman13.github.io/maidulportfolio.github.io/))
+[View Live Portfolio](https://maidulrumman13.github.io/maidulportfolio.github.io/index.html)
 
 ## 📁 Project Structure
 
@@ -31,12 +31,13 @@ portfolio/
 ├── publications.html       # Research publications
 ├── contact.html            # Contact information
 └── assets/
-    ├── style.css           # Main stylesheet
     ├── projects.json       # All project data
-    ├── js/
-    │   ├── main.js         # Home page functionality
+    ├── css/
+    │   └── style.css           # Main stylesheet
+    ├── js/ 
     │   ├── mobile-nav.js   # Mobile navigation toggle
-    │   └── projects-page.js # All projects page
+    │   ├──projects-page.js # All projects page
+    │   └── script.js         # Home page functionality
     └── pages/
         ├── python.js       # Python projects dynamic loading
         ├── sql.js          # SQL projects dynamic loading
