@@ -223,7 +223,8 @@
             "Power BI",
             "Sales Analytics",
             "Customer Insights",
-            "Employee Performance"
+            "Employee Performance",
+            "Case Study"
         ],
         "type": "powerbi",
         "icon": "fas fa-chart-line",
@@ -231,3 +232,4 @@
     }
 
 ]
+
