@@ -175,11 +175,11 @@
         ],
         "type": "powerbi",
         "icon": "fas fa-chart-line",
-        "link": "https://www.linkedin.com/posts/md-maidul-islam-6a92391b9_dataanalytics-powerbi-datavisualization-activity-7367948677811732480-OhTX"
+        "link": "https://app.powerbi.com/view?r=eyJrIjoiMzQ1YzRjZTEtYjcwYS00Mjk2LWI2MmEtMjc2Yjk2Y2Y2NDJmIiwidCI6IjIwYjliYTY2LWExMWQtNDkzOC1iNzk0LWYyZTg1YjEzODgxOCIsImMiOjEwfQ%3D%3D"
     },
     {
         "title": "FMCG Growth & Performance Analytics",
-        "description": "Executed a data-driven FMCG growth project by developing an interactive Power BI dashboard, identifying top-performing stores and discount-based promotions as the key driver of incremental revenue (₹171.99M impact), enabling strategic optimization.",
+        "description": "Executed a data-driven FMCG growth project by developing an interactive Power BI dashboard, identifying top-performing stores and discount-based promotions as the key drivers of incremental revenue (₹171.99M impact), enabling strategic optimization.",
         "tags": [
             "Power BI",
             "FMCG Analytics",
@@ -188,7 +188,7 @@
         ],
         "type": "powerbi",
         "icon": "fas fa-chart-line",
-        "link": "https://www.linkedin.com/posts/md-maidul-islam-6a92391b9_powerbi-dataanalytics-fmcg-activity-7358220351908048896-DMyV"
+        "link": "https://app.powerbi.com/view?r=eyJrIjoiZWE5ODQ1NTktMzg3OS00MjU4LWI4MzUtM2ExZjY3Y2JjZTJkIiwidCI6IjIwYjliYTY2LWExMWQtNDkzOC1iNzk0LWYyZTg1YjEzODgxOCIsImMiOjEwfQ%3D%3D"
     },
     {
         "title": "Pizza Sales Performance Analysis",
@@ -201,7 +201,7 @@
         ],
         "type": "powerbi",
         "icon": "fas fa-chart-line",
-        "link": "https://www.linkedin.com/in/md-maidul-islam-6a92391b9/details/projects/1755037231292/single-media-viewer?type=LINK&profileId=ACoAADLCG6EBie-nGY9h8a42JWsxyEZpCp2rA2o"
+        "link": "https://app.powerbi.com/view?r=eyJrIjoiNTk1NmU0YWUtZmZiYy00NzNkLWEwYjItYjI0NzhmYjA3MDc3IiwidCI6IjIwYjliYTY2LWExMWQtNDkzOC1iNzk0LWYyZTg1YjEzODgxOCIsImMiOjEwfQ%3D%3D"
     },
     {
         "title": "Healthcare Financial Analytics Dashboard",
@@ -214,6 +214,7 @@
         ],
         "type": "powerbi",
         "icon": "fas fa-chart-line",
-        "link": "https://www.linkedin.com/posts/md-maidul-islam-6a92391b9_powerbi-dataanalytics-healthtech-activity-7366487006052298752-Mzu4"
+        "link": "https://app.powerbi.com/view?r=eyJrIjoiZmQ5NGEyOTUtM2IwOS00NjEyLTg0MjgtYmYyZjQ2MTRmNTJhIiwidCI6IjIwYjliYTY2LWExMWQtNDkzOC1iNzk0LWYyZTg1YjEzODgxOCIsImMiOjEwfQ%3D%3D"
     }
+
 ]
