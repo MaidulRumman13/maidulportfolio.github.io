@@ -221,10 +221,10 @@
         "description": "This interactive Power BI dashboard analyzes $4.25M in coffee chain revenue, uncovering promo impact (0.69% of sales), high customer loyalty (99.51% repeat rate), peak morning sales ($2.355K), and employee performance (top performer $0.5M), with recommendations for staffing and product optimization.",
         "tags": [
             "Power BI",
+            "Case Study",
             "Sales Analytics",
             "Customer Insights",
-            "Employee Performance",
-            "Case Study"
+            "Employee Performance"
         ],
         "type": "powerbi",
         "icon": "fas fa-chart-line",
@@ -232,4 +232,5 @@
     }
 
 ]
+
 
