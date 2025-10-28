@@ -242,12 +242,13 @@
             "Business Intelligence",
             "Excel Power Query"
           ],
-          "type": "SQL",
+          "type": "sql",
           "icon": "fas fa-chart-line",
           "link": "https://www.linkedin.com/posts/md-maidul-islam-6a92391b9_dataanalytics-sql-powerbi-activity-7388970553556025345-jlXe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLCG6EBie-nGY9h8a42JWsxyEZpCp2rA2o"
     }
 
 ]
+
 
 
 
