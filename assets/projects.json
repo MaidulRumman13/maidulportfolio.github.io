@@ -229,8 +229,25 @@
         "type": "powerbi",
         "icon": "fas fa-chart-line",
         "link": "https://app.powerbi.com/view?r=eyJrIjoiODdmMWJlMjEtZDBkZC00OGQ5LTliMmQtMmEyZWRmOTYzODc2IiwidCI6IjIwYjliYTY2LWExMWQtNDkzOC1iNzk0LWYyZTg1YjEzODgxOCIsImMiOjEwfQ%3D%3D"
+    },
+    {
+          "title": "Omniretail Sales Performance Analysis",
+          "description": "This interactive Power BI dashboard analyzes $497.66K in multi-region retail sales, revealing West region as top performer ($0.14M), Electronics with highest return rate (15.63%), Q2-Q3 as peak quarters, and top 10 customers driving 25%+ of revenue — with actionable recommendations for regional scaling, quality control, and loyalty programs.",
+          "tags": [
+            "Power BI",
+            "SQL",
+            "Retail Analytics",
+            "Data Cleaning",
+            "Ad-hoc Analysis",
+            "Business Intelligence",
+            "Excel Power Query"
+          ],
+          "type": "SQL",
+          "icon": "fas fa-chart-line",
+          "link": "https://www.linkedin.com/posts/md-maidul-islam-6a92391b9_dataanalytics-sql-powerbi-activity-7388970553556025345-jlXe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLCG6EBie-nGY9h8a42JWsxyEZpCp2rA2o"
     }
 
 ]
+
 
 
