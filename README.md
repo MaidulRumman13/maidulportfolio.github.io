@@ -22,7 +22,7 @@ A **professional, responsive, and comprehensive** data analytics portfolio showc
 
 ---
 
-## 🚀 Live Demo((https://maidulrumman13.github.io/maidulportfolio.github.io/))
+## 🚀 [Live Demo](https://maidulrumman13.github.io/maidulportfolio.github.io/)
 
 ---
 
