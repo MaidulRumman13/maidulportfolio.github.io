@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🔒 SECURITY -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-src https://app.powerbi.com; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- 🚀 SEO -->
+    <title>FMCG Sales & Promotion Performance Analysis | Md Maidul Islam</title>
+    <meta name="description" content="Analyzed store performance and promotion effectiveness in the FMCG domain using Power BI. Uncovered actionable opportunities to optimize revenue, revealing ₹207M Incremental Revenue from top stores and ₹171.99M impact from discount-based promotions.">
+    <meta name="keywords" content="FMCG Analytics, Power BI, Store Performance, Promotion Analysis, ROI, Data Analyst Portfolio, Md Maidul Islam">
+    <meta property="og:title" content="FMCG Sales & Promotion Performance Analysis | Md Maidul Islam">
+    <meta property="og:description" content="Uncovered actionable opportunities to optimize revenue and sales uplift in the FMCG domain using Power BI.">
+    <meta property="og:image" content="../assets/projects/project2/1.png">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind & External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { 
+            darkMode: 'class', 
+            theme: { 
+                extend: { 
+                    colors: { primary: '#0A2540', accent: '#FF9F1C', lightbg: '#F8F9FA', darkbg: '#0F172A', darkcard: '#1E293B', teal: '#14B8A6' } 
+                } 
+            } 
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-lightbg dark:bg-darkbg text-slate-800 dark:text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-darkcard shadow-sm sticky top-0 z-50 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-primary dark:text-accent font-semibold hover:text-accent transition flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <button id="themeToggle" class="text-xl hover:text-accent transition" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:inline text-yellow-400"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header & Live Dashboard -->
+        <header class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <span class="text-accent font-semibold bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-sm">Power BI Case Study</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-primary dark:text-white mt-4 mb-6">FMCG Sales & Promotion Performance Analysis</h1>
+                <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl mx-auto">
+                    Leveraging data-driven strategies to uncover actionable opportunities for optimizing revenue and sales uplift. This analysis reveals how top stores succeed and which promotions deliver true ROI.
+                </p>
+            </div>
+            
+            <!-- Live Embedded Power BI Dashboard -->
+            <div class="mb-12">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                    <h3 class="text-xl font-bold text-primary dark:text-white">Live Interactive Dashboard</h3>
+                </div>
+                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+                    <iframe 
+                        title="FMGC_2518_Md.Maidul_Islam" 
+                        class="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg border border-slate-200 dark:border-slate-700"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiZWE5ODQ1NTktMzg3OS00MjU4LWI4MzUtM2ExZjY3Y2JjZTJkIiwidCI6IjIwYjliYTY2LWExMWQtNDkzOC1iNzk0LWYyZTg1YjEzODgxOCIsImMiOjEwfQ%3D%3D" 
+                        frameborder="0" 
+                        allowFullScreen="true">
+                    </iframe>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Details -->
+        <section class="max-w-6xl mx-auto px-4 pb-20">
+            
+            <!-- Approach -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white dark:bg-darkcard p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-bullseye text-accent"></i> The Challenge
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        In the highly competitive FMCG domain, understanding store-level performance and the true effectiveness of promotional strategies is critical. The business needed to move beyond surface-level metrics to identify which stores were driving incremental revenue and which promotions were actually delivering sustainable ROI without eroding margins.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-darkcard p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-cogs text-accent"></i> My Approach
+                    </h2>
+                    <ul class="text-slate-600 dark:text-slate-400 space-y-3">
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Evaluated store-level performance to identify top and bottom performers.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Calculated the ROI of various promotional strategies (Discount vs. BOGOF vs. Cashback).</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Analyzed product category dynamics to find correlations between promotion types and sales lift.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Built an interactive Power BI dashboard to enable hyper-targeted future campaigns.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Business Insights -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-8">Key Wins & Business Insights</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Insight 1 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition">
+                        <div class="text-3xl mb-3">🏪</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Store Performance</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Identified top 10 stores driving <strong>₹207M Incremental Revenue (IR)</strong>. Chennai stores like STCHE-7 led with an exceptional 142.66% IR%, revealing city-specific patterns ripe for replication.</p>
+                    </div>
+                    <!-- Insight 2 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition">
+                        <div class="text-3xl mb-3">🏷️</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Promotion Impact</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Discount-based promotions significantly outperformed BOGOF/cashback in driving IR. Striking the right balance yielded a <strong>226K unit ISU lift</strong> and a <strong>₹171.99M margin impact</strong>.</p>
+                    </div>
+                    <!-- Insight 3 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition md:col-span-2 lg:col-span-1">
+                        <div class="text-3xl mb-3">📦</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Product Dynamics</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Specific categories (e.g., Combo packs) showed remarkable sales lift during promotions, enabling hyper-targeted future marketing campaigns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why This Matters -->
+            <div class="bg-gradient-to-br from-primary to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-2xl p-8 md:p-12 text-white mb-16 shadow-xl">
+                <h2 class="text-3xl font-bold mb-6 text-center text-accent">Why This Matters</h2>
+                <p class="text-slate-300 text-center max-w-3xl mx-auto leading-relaxed">
+                    This analysis goes beyond surface metrics. By revealing exactly how top stores succeed and which promotions deliver true ROI, businesses can confidently replicate success across underperforming stores and optimize promotional spend for maximum, sustainable impact.
+                </p>
+            </div>
+
+            <!-- Dashboard Screenshots Gallery -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-8">Dashboard Screenshots</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 md:col-span-2">
+                        <img src="../assets/projects/project2/1.png" alt="FMCG Dashboard Overview" class="w-full hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
+                        <img src="../assets/projects/project2/2.png" alt="FMCG Dashboard Page 2" class="w-full hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
+                        <img src="../assets/projects/project2/3.png" alt="FMCG Dashboard Page 3" class="w-full hover:scale-105 transition duration-300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM LINKS SECTION (GitHub & LinkedIn) -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                
+                <!-- GitHub Button -->
+                <a href="https://github.com/MaidulRumman13/FMCG-Domain-Project-Power-BI" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-800 dark:bg-slate-700 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-slate-700 dark:hover:bg-slate-600 transition shadow-sm">
+                    <i class="fab fa-github text-lg"></i> GitHub
+                </a>
+                
+                <!-- LinkedIn Button -->
+                <a href="https://lnkd.in/p/gj-68zZv" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#0A66C2] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#004182] transition shadow-sm">
+                    <i class="fab fa-linkedin text-lg"></i> LinkedIn
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-center pt-8 border-t border-slate-200 dark:border-slate-700">
+                <a href="../index.html#projects" class="bg-primary dark:bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition flex items-center gap-2">
+                    <i class="fas fa-th-large"></i> Back to All Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B1120] border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2026 Md Maidul Islam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

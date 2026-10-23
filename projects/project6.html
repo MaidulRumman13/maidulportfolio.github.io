@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔒 SECURITY -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- 🚀 SEO -->
+    <title>E-commerce Customer Behavior Analysis | Md Maidul Islam</title>
+    <meta name="description"
+        content="Python data analysis project uncovering e-commerce customer behavior patterns through structured EDA, answering 15+ business questions across 3 analytical levels.">
+    <meta name="keywords"
+        content="Python, Data Analysis, EDA, Pandas, Matplotlib, E-commerce, Customer Behavior, Md Maidul Islam">
+    <meta property="og:title" content="E-commerce Customer Behavior Analysis | Md Maidul Islam">
+    <meta property="og:description"
+        content="Uncovering key patterns that drive business decisions through Python-based EDA and visualization.">
+    <meta property="og:image" content="../assets/projects/project6/10.png">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind & External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { primary: '#0A2540', accent: '#FF9F1C', lightbg: '#F8F9FA', darkbg: '#0F172A', darkcard: '#1E293B', teal: '#14B8A6', python: '#3776AB', linkedin: '#0A66C2' }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-lightbg dark:bg-darkbg text-slate-800 dark:text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-darkcard shadow-sm sticky top-0 z-50 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html"
+                class="text-primary dark:text-accent font-semibold hover:text-accent transition flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <button id="themeToggle" class="text-xl hover:text-accent transition" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:inline text-yellow-400"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <header class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <span
+                    class="text-python font-semibold bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded-full text-sm border border-blue-200 dark:border-blue-800">Python
+                    Data Analysis</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-primary dark:text-white mt-4 mb-6">Uncovering E-commerce
+                    Customer Behavior</h1>
+                <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl mx-auto">
+                    Analyzed a 10,000+ record e-commerce dataset through data preprocessing, Exploratory Data Analysis
+                    (EDA), and visualization to uncover key patterns that drive strategic business decisions.
+                </p>
+            </div>
+        </header>
+
+        <!-- Project Details -->
+        <section class="max-w-6xl mx-auto px-4 pb-20">
+
+            <!-- Approach -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div
+                    class="bg-white dark:bg-darkcard p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-bullseye text-accent"></i> The Objective
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        E-commerce businesses need to understand what drives customer retention and high-value
+                        transactions. The goal was to move beyond surface-level metrics and identify the underlying
+                        behavioral patterns of new vs. returning customers, subscription impact, and regional
+                        performance.
+                    </p>
+                </div>
+                <div
+                    class="bg-white dark:bg-darkcard p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-cogs text-accent"></i> My Approach
+                    </h2>
+                    <ul class="text-slate-600 dark:text-slate-400 space-y-3">
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i>
+                            <strong>Data Preprocessing:</strong> Handled missing values and standardized data types
+                            using Pandas.
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i>
+                            <strong>Structured EDA:</strong> Answered 15 targeted business questions across 3 analytical
+                            levels (Basic, Intermediate, Critical Thinking).
+                        </li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i>
+                            <strong>Visualization:</strong> Generated 12+ intuitive graphs using Matplotlib/Seaborn to
+                            communicate findings effectively.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Featured Visualizations (Only the best 4) -->
+            <div class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-primary dark:text-white mb-4">Featured Visualizations</h2>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Highlighting the most critical insights from the analysis. These visualizations represent the
+                        core findings that drive business strategy.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Graph 1: L2Q2 (Scatter Plot - Very important finding) -->
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col">
+                        <div
+                            class="p-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 flex justify-between items-center">
+                            <span
+                                class="text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-3 py-1 rounded-full">L2Q2:
+                                Diagnostic Insight</span>
+                        </div>
+                        <img src="../assets/projects/project6/1.png" alt="Time Spent vs Purchase Amount"
+                            class="w-full hover:scale-105 transition duration-300 bg-slate-100 dark:bg-slate-800 object-contain p-4">
+                        <div class="p-6 border-t border-slate-200 dark:border-slate-700">
+                            <h4 class="font-bold text-primary dark:text-white text-lg mb-2">Intent-Driven Shopping
+                                Behavior</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Correlation between time spent on site
+                                and purchase amount is near zero (0.01). Customers are purpose-driven, not browsers.
+                                Mobile UX optimization is more valuable than engagement features.</p>
+                        </div>
+                    </div>
+
+                    <!-- Graph 2: L3Q1 (Retention Factors) -->
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col">
+                        <div
+                            class="p-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 flex justify-between items-center">
+                            <span
+                                class="text-xs font-bold text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900/30 px-3 py-1 rounded-full">L3Q1:
+                                Critical Thinking</span>
+                        </div>
+                        <img src="../assets/projects/project6/2.png" alt="Factors Influencing Customer Retention"
+                            class="w-full hover:scale-105 transition duration-300 bg-slate-100 dark:bg-slate-800 object-contain p-4">
+                        <div class="p-6 border-t border-slate-200 dark:border-slate-700">
+                            <h4 class="font-bold text-primary dark:text-white text-lg mb-2">Drivers of Customer
+                                Retention</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Multi-panel analysis reveals that
+                                satisfaction and subscription status drive loyalty significantly more than discounts
+                                (48.9% vs 51.4% usage rate).</p>
+                        </div>
+                    </div>
+
+                    <!-- Graph 3: L3Q2 (Payment Impact) -->
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col">
+                        <div
+                            class="p-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 flex justify-between items-center">
+                            <span
+                                class="text-xs font-bold text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900/30 px-3 py-1 rounded-full">L3Q2:
+                                Critical Thinking</span>
+                        </div>
+                        <img src="../assets/projects/project6/3.png" alt="Payment Methods Impact"
+                            class="w-full hover:scale-105 transition duration-300 bg-slate-100 dark:bg-slate-800 object-contain p-4">
+                        <div class="p-6 border-t border-slate-200 dark:border-slate-700">
+                            <h4 class="font-bold text-primary dark:text-white text-lg mb-2">Payment Methods & Return
+                                Rates</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Bank Transfer users show the highest
+                                return rate (51.2%) while PayPal shows the lowest (48.9%), suggesting payment experience
+                                directly impacts satisfaction.</p>
+                        </div>
+                    </div>
+
+                    <!-- Graph 4: L3Q3 (Location Impact) -->
+                    <div
+                        class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700 flex flex-col">
+                        <div
+                            class="p-4 border-b border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 flex justify-between items-center">
+                            <span
+                                class="text-xs font-bold text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900/30 px-3 py-1 rounded-full">L3Q3:
+                                Critical Thinking</span>
+                        </div>
+                        <img src="../assets/projects/project6/4.png" alt="Location Impact"
+                            class="w-full hover:scale-105 transition duration-300 bg-slate-100 dark:bg-slate-800 object-contain p-4">
+                        <div class="p-6 border-t border-slate-200 dark:border-slate-700">
+                            <h4 class="font-bold text-primary dark:text-white text-lg mb-2">Location: Purchase vs
+                                Delivery</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Dual-axis analysis shows Khulna leads
+                                in purchase amount ($513.9) with the fastest delivery (6.8 days), proving logistics
+                                efficiency drives high-value sales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- L3Q4: Major Insights Synthesis (Text-based) -->
+            <div
+                class="bg-gradient-to-br from-primary to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-2xl p-8 md:p-12 text-white mb-16 shadow-xl">
+                <h2 class="text-3xl font-bold mb-8 text-center text-accent flex items-center justify-center gap-2">
+                    <span
+                        class="w-10 h-10 rounded-full bg-accent text-primary flex items-center justify-center text-sm font-bold">4</span>
+                    L3Q4: Major Insights Synthesis
+                </h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex gap-4">
+                        <i class="fas fa-brain text-accent text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Intent-Driven Shopping Behavior</h3>
+                            <p class="text-slate-300 text-sm">The near-zero correlation (0.01) between time spent and
+                                purchase amount reveals customers are purpose-driven, not browsers. Mobile UX
+                                optimization is more valuable than engagement features.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-heart text-accent text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Satisfaction > Discounts for Retention</h3>
+                            <p class="text-slate-300 text-sm">Discount usage is nearly equal (48.9% vs 51.4%) between
+                                new and return customers, proving that satisfaction and subscription status drive
+                                loyalty more than price incentives.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-map-marked-alt text-accent text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Regional Performance Gaps</h3>
+                            <p class="text-slate-300 text-sm">Khulna and Barisal show highest purchase values but
+                                delivery times vary (6.8-7.1 days). Optimizing logistics in high-value regions can
+                                directly boost retention.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-credit-card text-accent text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Payment Method Patterns</h3>
+                            <p class="text-slate-300 text-sm">Bank Transfer users show highest return rates (51.2%)
+                                despite being the most common payment method. PayPal users show lowest return rates
+                                (48.9%), suggesting payment experience impacts satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Recommendations -->
+            <div class="bg-gradient-to-br from-accent to-orange-600 rounded-2xl p-8 md:p-12 text-white mb-16 shadow-xl">
+                <h2 class="text-3xl font-bold mb-8 text-center">Strategic Business Recommendations</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex gap-4">
+                        <i class="fas fa-shipping-fast text-white text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Faster Premium Delivery</h3>
+                            <p class="text-white/90 text-sm">Introduce expedited shipping exclusively for Premium
+                                subscribers to close the value gap.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Optimize Regional Logistics</h3>
+                            <p class="text-white/90 text-sm">Focus supply chain improvements in high-value regions like
+                                Barisal and Khulna.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-star text-white text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Convert 3-Star Reviewers</h3>
+                            <p class="text-white/90 text-sm">Implement targeted follow-ups to turn neutral (3-star)
+                                reviewers into 5-star advocates.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fas fa-mobile-alt text-white text-2xl mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">Improve Mobile UX</h3>
+                            <p class="text-white/90 text-sm">Streamline product discovery on mobile to cater to
+                                intent-driven, quick shoppers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub & LinkedIn Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="https://github.com/MaidulRumman13/Ecommerce-Customer-Behavior-Analysis/tree/main"
+                    target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-slate-800 dark:bg-slate-700 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-slate-700 dark:hover:bg-slate-600 transition shadow-sm">
+                    <i class="fab fa-github text-lg"></i> GitHub
+                </a>
+
+                <a href="https://lnkd.in/p/gSzp7mMD" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-[#0A66C2] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#004182] transition shadow-sm">
+                    <i class="fab fa-linkedin text-lg"></i> LinkedIn
+                </a>
+            </div>
+
+            <!-- Back to All Projects Button (with added spacing) -->
+            <div class="flex justify-center pt-8 border-t border-slate-200 dark:border-slate-700 mt-12">
+                <a href="../index.html#projects"
+                    class="bg-primary dark:bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition flex items-center gap-2">
+                    <i class="fas fa-th-large"></i> Back to All Projects
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B1120] border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2026 Md Maidul Islam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

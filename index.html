@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark"> <!-- ডিফল্ট ডার্ক মোড -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔒 SECURITY -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- 🚀 SEO -->
+    <title>Md Maidul Islam | Data Analyst Portfolio | Power BI, Python, SQL Expert</title>
+    <meta name="description"
+        content="Md Maidul Islam - Professional Data Analyst with 2+ years of experience in Power BI, Python, SQL, and Excel.">
+    <meta name="keywords" content="Md Maidul Islam, Data Analyst, Power BI, Python, SQL, Portfolio">
+    <meta name="author" content="Md Maidul Islam">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://your-portfolio-domain.com">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-portfolio-domain.com">
+    <meta property="og:title" content="Md Maidul Islam | Data Analyst Portfolio">
+    <meta property="og:description" content="Transforming Raw Data into Actionable Business Insights.">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Md Maidul Islam | Data Analyst Portfolio">
+    <meta property="twitter:image" content="assets/profile.png">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md Maidul Islam",
+      "jobTitle": "Data Analyst",
+      "url": "https://your-portfolio-domain.com",
+      "email": "rummanmaidul13@gmail.com",
+      "telephone": "+8801932314941",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "Bangladesh" },
+      "sameAs": [
+        "https://www.linkedin.com/in/md-maidul-islam-6a92391b9/",
+        "https://github.com/MaidulRumman13",
+        "https://www.researchgate.net/profile/Md-Maidul-Islam-8",
+        "https://www.upwork.com/freelancers/mdmaidulislam"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CDN & Config (এটি HTML এ রাখতেই হবে) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { primary: '#0A2540', accent: '#FF9F1C', lightbg: '#F8F9FA', darkbg: '#0F172A', darkcard: '#1E293B', teal: '#14B8A6', whatsapp: '#25D366' }
+                }
+            }
+        }
+    </script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-lightbg dark:bg-darkbg text-slate-800 dark:text-slate-200">
+
+    <!-- Navbar -->
+    <nav class="bg-white dark:bg-darkcard shadow-sm sticky top-0 z-50 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="assets/logo.png" alt="Md Maidul Islam Logo" class="h-10 md:h-12 w-auto object-contain">
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#education" class="hover:text-accent transition">Education</a>
+                <a href="#publications" class="hover:text-accent transition">Research</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="themeToggle" class="text-xl hover:text-accent transition" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:inline text-yellow-400"></i>
+                </button>
+                <a href="https://www.upwork.com/freelancers/mdmaidulislam" target="_blank" rel="noopener noreferrer"
+                    class="bg-accent text-white px-5 py-2 rounded-lg hover:bg-opacity-90 transition hidden md:block font-semibold">Hire
+                    Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="max-w-6xl mx-auto px-4 py-20 md:py-28 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <p class="text-accent font-semibold mb-2 text-lg">Hello, I'm Md Maidul Islam 👋</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-primary dark:text-white leading-tight mb-4">
+                    Transforming Raw Data into Actionable Business Insights.</h1>
+                <p class="text-slate-600 dark:text-slate-400 text-lg mb-8">Detail-oriented Data Analyst with 2+ years of
+                    experience in Data Cleaning, Processing, MIS Reporting and Analytical Dashboard Development. Skilled
+                    in Excel, Power BI, SQL, Python & IBM SPSS.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects"
+                        class="bg-primary dark:bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition text-center shadow-lg">View
+                        My Work</a>
+                    <a href="assets/Maidul's_CV.pdf" download
+                        class="border-2 border-primary dark:border-accent text-primary dark:text-accent px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white dark:hover:bg-accent dark:hover:text-white transition text-center">
+                        <i class="fas fa-download mr-2"></i>Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div
+                    class="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-accent">
+                    <img src="assets/profile.png" alt="Md Maidul Islam - Data Analyst"
+                        class="w-full h-full object-cover bg-slate-200" loading="lazy">
+                </div>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-white dark:bg-darkbg transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-teal font-bold tracking-widest text-sm mb-2">ABOUT ME</h3>
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary dark:text-white mb-6 leading-tight">Data
+                            Analyst | Turning Data into Decisions</h2>
+                        <p class="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">I'm <span
+                                class="font-bold text-primary dark:text-white">Md Maidul Islam</span>, a detail-oriented
+                            Data Analyst with a Bachelor of Science in Computer Science and Engineering and over 2 years
+                            of hands-on experience in data compilation, MIS reporting, and analytical dashboard
+                            development.</p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">Skilled in preparing accurate
+                            daily, weekly, and monthly reports for management decision-making, auditing large datasets
+                            for discrepancies, and coordinating cross-departmentally. Proficient in Excel, Power BI,
+                            SQL, and Python.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div
+                            class="bg-lightbg dark:bg-darkcard p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition kpi-card">
+                            <div
+                                class="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-clock text-emerald-600 dark:text-emerald-400 text-xl"></i>
+                            </div>
+                            <h4 class="text-3xl font-bold text-primary dark:text-white mb-1">2+</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Years Experience</p>
+                        </div>
+                        <div
+                            class="bg-lightbg dark:bg-darkcard p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition kpi-card">
+                            <div
+                                class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-chart-column text-blue-600 dark:text-blue-400 text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary dark:text-white mb-1">Power BI</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">& Python Expert</p>
+                        </div>
+                        <div
+                            class="bg-lightbg dark:bg-darkcard p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition kpi-card">
+                            <div
+                                class="w-12 h-12 bg-teal-100 dark:bg-teal-900/30 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-location-dot text-teal-600 dark:text-teal-400 text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-primary dark:text-white mb-1">Dhaka</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Bangladesh</p>
+                        </div>
+                        <div
+                            class="bg-lightbg dark:bg-darkcard p-6 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition kpi-card">
+                            <div
+                                class="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-4">
+                                <i class="fas fa-book-open text-purple-600 dark:text-purple-400 text-xl"></i>
+                            </div>
+                            <h4 class="text-3xl font-bold text-primary dark:text-white mb-1">2</h4>
+                            <p class="text-sm text-slate-500 dark:text-slate-400">Research Papers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (সংক্ষেপে রাখা হয়েছে, আগের মতোই থাকবে) -->
+        <section id="skills" class="py-20 bg-lightbg dark:bg-darkcard transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-12">Skills & Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Python -->
+                    <div
+                        class="skill-card bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-4"><i class="fab fa-python text-3xl text-blue-500"></i>
+                            <h3 class="font-bold text-primary dark:text-white text-lg">Python</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">Pandas</span><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">NumPy</span>
+                        </div>
+                    </div>
+                    <!-- Power BI -->
+                    <div
+                        class="skill-card bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-4"><i
+                                class="fas fa-chart-bar text-3xl text-yellow-500"></i>
+                            <h3 class="font-bold text-primary dark:text-white text-lg">Power BI</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">DAX</span><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">Power
+                                Query</span></div>
+                    </div>
+                    <!-- SQL -->
+                    <div
+                        class="skill-card bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-4"><i class="fas fa-database text-3xl text-blue-700"></i>
+                            <h3 class="font-bold text-primary dark:text-white text-lg">SQL</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">SQL
+                                Server</span><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                    <!-- Excel -->
+                    <div
+                        class="skill-card bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-4"><i
+                                class="fas fa-file-excel text-3xl text-green-600"></i>
+                            <h3 class="font-bold text-primary dark:text-white text-lg">Microsoft Excel</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">Pivot
+                                Tables</span><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">Power
+                                Query</span></div>
+                    </div>
+                    <!-- Tableau -->
+                    <div
+                        class="skill-card bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-4"><i
+                                class="fas fa-chart-pie text-3xl text-blue-500"></i>
+                            <h3 class="font-bold text-primary dark:text-white text-lg">Tableau</h3>
+                        </div>
+                        <p class="text-sm text-slate-500 dark:text-slate-400">Interactive Dashboards & Data
+                            Visualization</p>
+                    </div>
+                    <!-- Stats -->
+                    <div
+                        class="skill-card bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-4"><i
+                                class="fas fa-calculator text-3xl text-purple-600"></i>
+                            <h3 class="font-bold text-primary dark:text-white text-lg">Statistical Analysis</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2"><span
+                                class="text-xs bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 px-2 py-1 rounded">SPSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language Proficiency Section -->
+        <section id="languages" class="py-20 bg-white dark:bg-darkbg transition-colors duration-300">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-primary dark:text-white mb-12">Language Proficiency</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Bengali -->
+                    <div
+                        class="bg-lightbg dark:bg-darkcard p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-6 transition hover:shadow-md">
+                        <div
+                            class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-language text-3xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div class="text-left w-full">
+                            <h3 class="text-xl font-bold text-primary dark:text-white">Bengali</h3>
+                            <p class="text-accent font-semibold text-sm mb-2">Native / Bilingual</p>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- English -->
+                    <div
+                        class="bg-lightbg dark:bg-darkcard p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-6 transition hover:shadow-md">
+                        <div
+                            class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-language text-3xl text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div class="text-left w-full">
+                            <h3 class="text-xl font-bold text-primary dark:text-white">English</h3>
+                            <p class="text-accent font-semibold text-sm mb-2">Professional Working Proficiency</p>
+                            <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-lightbg dark:bg-darkcard py-20 transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-8">Featured Data Projects</h2>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button
+                        class="filter-btn active px-6 py-2 rounded-full border-2 border-primary dark:border-accent font-semibold transition"
+                        data-filter="all">All</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border-2 border-primary dark:border-accent text-primary dark:text-accent font-semibold transition"
+                        data-filter="powerbi">Power BI</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border-2 border-primary dark:border-accent text-primary dark:text-accent font-semibold transition"
+                        data-filter="python">Python</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border-2 border-primary dark:border-accent text-primary dark:text-accent font-semibold transition"
+                        data-filter="tableau">Tableau</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border-2 border-primary dark:border-accent text-primary dark:text-accent font-semibold transition"
+                        data-filter="excel">Excel</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full border-2 border-primary dark:border-accent text-primary dark:text-accent font-semibold transition"
+                        data-filter="sql">SQL</button>
+
+                </div>
+                <div class="grid md:grid-cols-3 gap-8" id="projectGrid">
+                    <!-- Project 1 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="powerbi">
+                        <div class="h-40 bg-primary flex items-center justify-center"><i
+                                class="fas fa-mug-hot text-6xl text-accent"></i></div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Power
+                                BI</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">Daily Brew Coffee Sales
+                            </h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Analyzed $4.25M revenue to
+                                identify morning peaks, driving a 15% revenue uplift.</p>
+                            <a href="projects/project1.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="powerbi">
+                        <div class="h-40 bg-primary flex items-center justify-center"><i
+                                class="fas fa-store text-6xl text-accent"></i></div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Power
+                                BI</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">FMCG Sales & Promotion
+                            </h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Evaluated store performance and
+                                ROI, maximizing incremental revenue by $171.99M.</p>
+                            <a href="projects/project2.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="excel">
+                        <div class="h-40 bg-primary flex items-center justify-center"><i
+                                class="fas fa-cookie-bite text-6xl text-accent"></i></div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Excel</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">B&J Biscuit Analysis
+                            </h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Dynamic sales dashboard analyzing
+                                profit margins and consumer demographics.</p>
+                            <a href="projects/project3.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="powerbi sql">
+                        <div class="h-40 bg-primary flex items-center justify-center"><i
+                                class="fas fa-shopping-cart text-6xl text-accent"></i></div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Power
+                                BI</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">Omniretail Sales
+                                Analysis</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Analyzed $497K retail revenue,
+                                identifying regional trends and a 15.6% return rate in Electronics.</p>
+                            <a href="projects/project4.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="powerbi">
+                        <div class="h-40 bg-primary flex items-center justify-center">
+                            <i class="fas fa-building text-6xl text-accent"></i>
+                        </div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Power
+                                BI</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">Real Estate Property
+                                Management</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Transformed raw housing data into
+                                a robust star-schema model with advanced DAX to deliver a 360° portfolio view.</p>
+                            <a href="projects/project5.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="python">
+                        <div class="h-40 bg-primary flex items-center justify-center">
+                            <i class="fab fa-python text-6xl text-accent"></i>
+                        </div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Python</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">E-commerce Customer
+                                Behavior</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Analyzed 10,000+ records using
+                                Pandas & Matplotlib to uncover retention drivers and regional high-value patterns across
+                                3 analytical levels.</p>
+                            <a href="projects/project6.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 7 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="tableau">
+                        <div class="h-40 bg-primary flex items-center justify-center">
+                            <i class="fas fa-chart-line text-6xl text-accent"></i>
+                        </div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Tableau</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">AirBnb Seattle Rental
+                                Market</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Interactive dashboard analyzing
+                                pricing trends, bedroom availability, and geographic patterns in Seattle's rental
+                                market.</p>
+                            <a href="projects/project7.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 8 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="tableau">
+                        <div class="h-40 bg-primary flex items-center justify-center">
+                            <i class="fas fa-heartbeat text-6xl text-accent"></i>
+                        </div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">Tableau
+                                + IEEE</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">HDVis: Cardiac Disease
+                                Visualization</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">IEEE-published research featuring
+                                interactive heart disease analysis dashboard with demographic and clinical risk factor
+                                visualizations.</p>
+                            <a href="projects/project8.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 9 -->
+                    <div class="project-card bg-white dark:bg-darkbg rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 dark:border-slate-700"
+                        data-category="sql">
+                        <div class="h-40 bg-primary flex items-center justify-center">
+                            <i class="fas fa-database text-6xl text-accent"></i>
+                        </div>
+                        <div class="p-6">
+                            <span
+                                class="text-xs font-semibold text-accent bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">SQL</span>
+                            <h3 class="text-xl font-bold text-primary dark:text-white mt-3 mb-2">Nashville Housing Data
+                                Cleaning</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">Transformed 56,478+ rows of messy
+                                real estate data into a clean, structured format using advanced SQL techniques like
+                                Self-Joins, CTEs, and Window Functions.</p>
+                            <a href="projects/project9.html"
+                                class="text-primary dark:text-accent font-semibold text-sm hover:text-accent transition">View
+                                Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- ========================================== -->
+                    <!-- 🚀 ভবিষ্যতে নতুন প্রজেক্ট যুক্ত করতে চাইলে পেস্ট করুন -->
+                    <!-- ========================================== -->
+
+                </div>
+
+                <!-- Load More Projects Button -->
+                <div class="col-span-full text-center mt-12">
+                    <button id="loadMoreBtn"
+                        class="bg-primary dark:bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition shadow-md flex items-center gap-2 mx-auto">
+                        Load More Projects <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 bg-white dark:bg-darkbg transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-12">Work Experience</h2>
+                <div class="space-y-8 border-l-2 border-accent pl-6 max-w-3xl mx-auto">
+                    <div class="relative">
+                        <div class="absolute -left-[31px] w-4 h-4 bg-accent rounded-full"></div>
+                        <h3 class="font-bold text-primary dark:text-white text-lg">MEAL Associate</h3>
+                        <p class="text-sm text-accent font-semibold mb-1">GFA Consulting Group | Apr 2026 - Present</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Auditing large datasets, resolving
+                            anomalies in KIMS, and cross-departmental coordination.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[31px] w-4 h-4 bg-accent rounded-full"></div>
+                        <h3 class="font-bold text-primary dark:text-white text-lg">IT Executive</h3>
+                        <p class="text-sm text-accent font-semibold mb-1">Pixela V& IT Solution | Jun 2024 - Oct 2024
+                        </p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Automated Excel workflows for inventory
+                            tracking and managed project budgets.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[31px] w-4 h-4 bg-accent rounded-full"></div>
+                        <h3 class="font-bold text-primary dark:text-white text-lg">Operations Associate</h3>
+                        <p class="text-sm text-accent font-semibold mb-1">Pathao Limited | Oct 2023 - May 2024</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm">Optimized delivery routes, automated daily
+                            tracking, and built dynamic KPI dashboards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="py-20 bg-lightbg dark:bg-darkcard transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-12">Education & Certifications
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-accent mb-4 flex items-center"><i
+                                class="fas fa-graduation-cap mr-3"></i>Education</h3>
+                        <div
+                            class="bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
+                            <h4 class="font-bold text-primary dark:text-white text-lg">BSc in Computer Science &
+                                Engineering</h4>
+                            <p class="text-sm text-accent font-semibold mt-1">City University, Dhaka | April 2022</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">CGPA: 3.42 out of 4.00</p>
+                        </div>
+                        <div
+                            class="bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
+                            <h4 class="font-bold text-primary dark:text-white text-lg">HSC (Science)</h4>
+                            <p class="text-sm text-accent font-semibold mt-1">Safa Degree College | 2015</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">GPA: 4.13 out of 5.00</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-accent mb-4 flex items-center"><i
+                                class="fas fa-certificate mr-3"></i>Certifications</h3>
+                        <div
+                            class="bg-white dark:bg-darkbg p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition">
+                            <h4 class="font-bold text-primary dark:text-white text-lg">Data Analyst Job Ready Bootcamp
+                            </h4>
+                            <p class="text-sm text-accent font-semibold mt-1">Data Solution 360 | Jan 2026</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm mt-2">6-month intensive program
+                                covering Excel, SQL, Power BI, Python, and Statistics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Publications -->
+        <section id="publications" class="py-20 bg-white dark:bg-darkbg transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-12">Research & Publications
+                </h2>
+                <div class="space-y-6 max-w-4xl mx-auto">
+                    <div
+                        class="bg-lightbg dark:bg-darkcard p-6 rounded-xl shadow-sm border-l-4 border-accent hover:shadow-md transition">
+                        <h3 class="font-bold text-primary dark:text-white text-lg mb-2">"An Improved Heart Disease
+                            Prediction Using Stacked Ensemble Method"</h3>
+                        <p class="text-sm text-accent font-semibold mb-3">Published in Springer (2022) | DOI:
+                            10.1007/978-3-031-34619-4_8</p>
+                        <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-2 list-disc list-inside">
+                            <li>Proved the clear superiority of Stacked Ensemble Methods over single algorithms.</li>
+                            <li>Identified critical clinical risk factors as the strongest early predictors.</li>
+                            <li>Optimized the predictive model framework to drastically reduce 'False Negatives'.</li>
+                        </ul>
+                    </div>
+                    <div
+                        class="bg-lightbg dark:bg-darkcard p-6 rounded-xl shadow-sm border-l-4 border-accent hover:shadow-md transition">
+                        <h3 class="font-bold text-primary dark:text-white text-lg mb-2">"HDVis: An Interactive Heart
+                            Disease Analysis Through Visualization System"</h3>
+                        <p class="text-sm text-accent font-semibold mb-3">Published in IEEE (2022) | DOI:
+                            10.1109/ICDSIS55133.2022.9915972</p>
+                        <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-2 list-disc list-inside">
+                            <li>Discovered distinct demographic patterns proving heart disease risk severity varies
+                                across age groups.</li>
+                            <li>Simplified multidimensional medical datasets into dynamic visual dashboards.</li>
+                            <li>Developed the user-centric HDVis system to enhance data-driven decisions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-[#0F172A] dark:bg-[#0B1120] transition-colors duration-300">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <p class="text-teal font-semibold mb-2">GET IN TOUCH</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Let's Work Together</h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Open to full-time roles, freelance projects, and
+                        collaborations in data analysis and business intelligence.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Left Side: Contact Info & Links -->
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-teal text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold mb-1">Email</h3>
+                                <a href="mailto:rummanmaidul13@gmail.com"
+                                    class="text-teal hover:text-teal/80 transition">rummanmaidul13@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-teal text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold mb-1">Phone</h3>
+                                <a href="tel:+8801932314941" class="text-teal hover:text-teal/80 transition">+880
+                                    1932-314941</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-teal/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-location-dot text-teal text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold mb-1">Location</h3>
+                                <p class="text-slate-400">Bosila, Mohammadpur, Dhaka-1207</p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp Button -->
+                        <div class="pt-6">
+                            <a href="https://wa.me/8801932314941?text=Hello%20Md%20Maidul%20Islam,%20I%20found%20your%20portfolio%20and%20I'm%20interested%20in%20your%20data%20analysis%20services."
+                                target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center gap-3 bg-whatsapp hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-lg transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                                <div class="text-left">
+                                    <div class="text-sm opacity-90">Chat on</div>
+                                    <div class="text-lg">WhatsApp</div>
+                                </div>
+                            </a>
+                            <p class="text-slate-400 text-sm mt-3">Quick response guaranteed! Available for freelance
+                                projects.</p>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="pt-6">
+                            <h3 class="text-white font-semibold mb-4">Follow Me</h3>
+                            <div class="flex gap-4">
+                                <a href="https://www.linkedin.com/in/md-maidul-islam-6a92391b9/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-teal hover:text-white transition"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/MaidulRumman13" target="_blank" rel="noopener noreferrer"
+                                    class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-teal hover:text-white transition"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.researchgate.net/profile/Md-Maidul-Islam-8" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-teal hover:text-white transition"
+                                    aria-label="ResearchGate">
+                                    <i class="fab fa-researchgate"></i>
+                                </a>
+                                <a href="https://www.upwork.com/freelancers/mdmaidulislam" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-slate-400 hover:bg-teal hover:text-white transition"
+                                    aria-label="Upwork">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Info Cards -->
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                            <h3 class="text-white font-semibold mb-2"><i
+                                    class="fas fa-briefcase mr-2 text-accent"></i>Available For</h3>
+                            <ul class="text-slate-400 text-sm space-y-1">
+                                <li>• Full-time Data Analyst Positions</li>
+                                <li>• Freelance Data Projects</li>
+                                <li>• Business Intelligence Consulting</li>
+                                <li>• Dashboard Development</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                            <h3 class="text-white font-semibold mb-2"><i
+                                    class="fas fa-clock mr-2 text-accent"></i>Response Time</h3>
+                            <p class="text-slate-400 text-sm">Usually responds within 1 hours during (10 AM - 12 AM
+                                BDST)</p>
+                        </div>
+                        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+                            <h3 class="text-white font-semibold mb-2"><i
+                                    class="fas fa-globe mr-2 text-accent"></i>Languages</h3>
+                            <p class="text-slate-400 text-sm">Bengali (Native), English (Professional)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#0B1120] border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2026 Md Maidul Islam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

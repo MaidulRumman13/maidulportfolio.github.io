@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🔒 SECURITY -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- 🚀 SEO -->
+    <title>B&J Biscuit Business Analysis Dashboard | Md Maidul Islam</title>
+    <meta name="description" content="Designed a dynamic Excel sales dashboard for B&J Biscuit to transform complex revenue distribution and profitability challenges into actionable insights using advanced Pivot Tables and interactive filters.">
+    <meta name="keywords" content="B&J Biscuit, Excel Dashboard, Pivot Tables, Data Analyst Portfolio, Md Maidul Islam, Business Intelligence, Profitability Analysis">
+    <meta property="og:title" content="B&J Biscuit Business Analysis Dashboard | Md Maidul Islam">
+    <meta property="og:description" content="Transforming complex revenue distribution and profitability challenges into actionable insights using advanced Excel dashboards.">
+    <meta property="og:image" content="../assets/projects/project3/1.png">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind & External Assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { 
+            darkMode: 'class', 
+            theme: { 
+                extend: { 
+                    colors: { primary: '#0A2540', accent: '#FF9F1C', lightbg: '#F8F9FA', darkbg: '#0F172A', darkcard: '#1E293B', teal: '#14B8A6' } 
+                } 
+            } 
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-lightbg dark:bg-darkbg text-slate-800 dark:text-slate-200">
+
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-darkcard shadow-sm sticky top-0 z-50 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="../index.html" class="text-primary dark:text-accent font-semibold hover:text-accent transition flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <button id="themeToggle" class="text-xl hover:text-accent transition" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:inline text-yellow-400"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <header class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <span class="text-accent font-semibold bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-sm">Excel Case Study</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-primary dark:text-white mt-4 mb-6">B&J Biscuit Business Analysis Dashboard</h1>
+                <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl mx-auto">
+                    Transforming complex revenue distribution and profitability challenges into an intuitive, visual command center. This dynamic Excel dashboard empowers the B&J team to drive smarter, data-backed decisions.
+                </p>
+            </div>
+            
+            <!-- Note: No Live Demo for Excel Projects, highlighting the static dashboard instead -->
+            <div class="bg-gradient-to-r from-primary to-slate-800 dark:from-slate-800 dark:to-slate-900 rounded-2xl p-8 text-center text-white shadow-xl mb-12">
+                <i class="fas fa-file-excel text-5xl text-green-400 mb-4"></i>
+                <h3 class="text-2xl font-bold mb-2">Advanced Excel Dashboard</h3>
+                <p class="text-slate-300 max-w-2xl mx-auto">Built using advanced Pivot Tables, Pivot Charts, and interactive Slicers to provide real-time, on-demand business intelligence without the need for external BI tools.</p>
+            </div>
+        </header>
+
+        <!-- Project Details -->
+        <section class="max-w-6xl mx-auto px-4 pb-20">
+            
+            <!-- Approach -->
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="bg-white dark:bg-darkcard p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-bullseye text-accent"></i> The Challenge
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        In today's competitive FMCG landscape, raw data alone is insufficient. B&J Biscuit needed clear, immediate insights to drive smarter decisions. The challenge was to transform their complex, multi-dimensional sales data into an intuitive format that illuminates key trends and opportunities at a glance.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-darkcard p-8 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                    <h2 class="text-2xl font-bold text-primary dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-cogs text-accent"></i> My Approach
+                    </h2>
+                    <ul class="text-slate-600 dark:text-slate-400 space-y-3">
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Designed a dynamic sales dashboard using <strong>advanced Pivot Tables</strong> and Charts.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Implemented <strong>interactive Slicers</strong> (Location, Payment Method, Age Group) for on-demand data slicing.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Engineered dynamic calculations to toggle between <strong>absolute values and percentages</strong> for deeper context.</li>
+                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-teal mt-1"></i> Systematically analyzed profit margins, sales trends, and consumer demographics.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Business Insights -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-8">How This Dashboard Empowers the B&J Team</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Insight 1 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition">
+                        <div class="text-3xl mb-3">🔍</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Deep-Dive Revenue Intelligence</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Instantly visualize revenue distribution across product price categories, customer age/gender, payment methods, and geographic locations for targeted marketing.</p>
+                    </div>
+                    <!-- Insight 2 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition">
+                        <div class="text-3xl mb-3">💰</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Profitability Spotlight</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Identify top-performing brands, locations, customers, and salespersons at a glance, alongside the crucial overall profit margin for smarter resource allocation.</p>
+                    </div>
+                    <!-- Insight 3 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition">
+                        <div class="text-3xl mb-3">👥</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Customer Understanding</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Go beyond top spenders to analyze demographic impact, ensuring sales and marketing strategies resonate with the right audience segments.</p>
+                    </div>
+                    <!-- Insight 4 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition">
+                        <div class="text-3xl mb-3">📈</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Dynamic Trend Tracking</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Spot revenue shifts instantly with Quarter-over-Quarter (QoQ), Month-over-Month (MoM), and Week-over-Week (WoW) change analysis.</p>
+                    </div>
+                    <!-- Insight 5 -->
+                    <div class="bg-lightbg dark:bg-darkbg p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-md transition md:col-span-2 lg:col-span-2">
+                        <div class="text-3xl mb-3">🎚️</div>
+                        <h3 class="font-bold text-primary dark:text-white mb-2">Interactive Exploration</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Intuitive filters let users slice data their way. Toggle between absolute values and percentages for deeper context, answering specific business questions on demand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Screenshots Gallery -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-primary dark:text-white text-center mb-8">Dashboard Screenshots</h2>
+                <div class="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
+                        <img src="../assets/projects/project3/1.png" alt="B&J Biscuit Dashboard Overview" class="w-full hover:scale-[1.02] transition duration-300">
+                    </div>
+                    <div class="bg-white dark:bg-darkcard rounded-xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-700">
+                        <img src="../assets/projects/project3/2.png" alt="B&J Biscuit Dashboard Detailed View" class="w-full hover:scale-[1.02] transition duration-300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTTOM LINKS SECTION (GitHub & LinkedIn) -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                
+                <!-- GitHub Button -->
+                <a href="https://github.com/MaidulRumman13/B-and-J-Biscuit-Sales-Dashboard" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-800 dark:bg-slate-700 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-slate-700 dark:hover:bg-slate-600 transition shadow-sm">
+                    <i class="fab fa-github text-lg"></i> GitHub
+                </a>
+                
+                <!-- LinkedIn Button -->
+                <a href="https://lnkd.in/p/gHKBUvmY" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#0A66C2] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#004182] transition shadow-sm">
+                    <i class="fab fa-linkedin text-lg"></i> LinkedIn
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-center pt-8 border-t border-slate-200 dark:border-slate-700">
+                <a href="../index.html#projects" class="bg-primary dark:bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition flex items-center gap-2">
+                    <i class="fas fa-th-large"></i> Back to All Projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0B1120] border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2026 Md Maidul Islam. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
