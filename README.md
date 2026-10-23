@@ -2,7 +2,7 @@
 
 ### Transforming Raw Data into Actionable Business Insights
 
-[![Portfolio Live](https://img.shields.io/badge/🌐_Portfolio_Live-FF9F1C?style=for-the-badge)]([YOUR_PORTFOLIO_LIVE_LINK_HERE](https://maidulrumman13.github.io/maidulportfolio.github.io/))
+[![Portfolio Live](https://img.shields.io/badge/🌐_Portfolio_Live-FF9F1C?style=for-the-badge)](https://maidulrumman13.github.io/maidulportfolio.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-maidul-islam-6a92391b9/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MaidulRumman13)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rummanmaidul13@gmail.com)
