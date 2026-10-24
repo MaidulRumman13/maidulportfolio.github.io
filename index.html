@@ -85,14 +85,16 @@
                 <a href="#education" class="hover:text-accent transition">Education</a>
                 <a href="#publications" class="hover:text-accent transition">Research</a>
             </div>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3 md:gap-4">
                 <button id="themeToggle" class="text-xl hover:text-accent transition" aria-label="Toggle Dark Mode">
                     <i class="fas fa-moon dark:hidden"></i>
                     <i class="fas fa-sun hidden dark:inline text-yellow-400"></i>
                 </button>
+                <!-- Updated: Removed 'hidden md:block' and added responsive styling -->
                 <a href="https://www.upwork.com/freelancers/mdmaidulislam" target="_blank" rel="noopener noreferrer"
-                    class="bg-accent text-white px-5 py-2 rounded-lg hover:bg-opacity-90 transition hidden md:block font-semibold">Hire
-                    Me</a>
+                    class="bg-accent text-white px-3 md:px-5 py-2 rounded-lg hover:bg-opacity-90 transition text-sm md:text-base font-semibold whitespace-nowrap">
+                    Hire Me
+                </a>
             </div>
         </div>
     </nav>
