@@ -17,6 +17,10 @@ const itemsPerPage = 6; // প্রথমে কয়টি প্রজেক
 let currentFilter = 'all';
 let visibleCount = itemsPerPage;
 
+// Tailwind Active & Inactive Classes
+const activeClasses = ['active', 'bg-primary', 'dark:bg-accent', 'text-white'];
+const inactiveClasses = ['bg-white', 'dark:bg-darkbg', 'text-slate-600', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-700'];
+
 // মূল ফাংশন যা ফিল্টার এবং লোড মোর দুটোই কন্ট্রোল করবে
 function updateProjects() {
     let visibleItems = 0;
@@ -55,8 +59,15 @@ function updateProjects() {
 if (filterBtns.length > 0) {
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            // ১. সব বাটন থেকে অ্যাক্টিভ স্টাইল সরিয়ে ইনঅ্যাক্টিভ স্টাইল যুক্ত করা
+            filterBtns.forEach(b => {
+                b.classList.remove(...activeClasses);
+                b.classList.add(...inactiveClasses);
+            });
+            
+            // ২. যেই বাটনে ক্লিক করা হয়েছে, সেটিতে অ্যাক্টিভ স্টাইল যুক্ত করা
+            btn.classList.add(...activeClasses);
+            btn.classList.remove(...inactiveClasses);
             
             currentFilter = btn.getAttribute('data-filter');
             visibleCount = itemsPerPage; // ফিল্টার চেঞ্জ করলে আবার প্রথম ৬টি দেখাবে
